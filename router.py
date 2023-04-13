@@ -4,6 +4,7 @@ from Parts import Parts, db
 part_routes = Blueprint('part_routes', __name__)
 
 
+# Get all parts
 @part_routes.route('/api/parts', methods=['GET'])
 def parts():
     all_parts = Parts.query.all()
@@ -20,6 +21,7 @@ def parts():
     return jsonify(parts_list)
 
 
+# Add a part
 @part_routes.route('/api/parts', methods=['POST'])
 def add_part():
     print('Adding a new part')
@@ -33,3 +35,40 @@ def add_part():
     db.session.commit()  # commits the transaction
     return jsonify({'message': 'Part added successfully'})
 
+
+# Update a part
+@part_routes.route('/api/parts/<int:id>', methods=['PUT'])
+def update_part(id):
+    print('Updating a part')
+    part = Parts.query.get(id)
+    part.partName = request.json['partName']
+    part.partType = request.json['partType']
+    part.quantity = request.json['quantity']
+    part.price = request.json['price']
+    db.session.commit()
+    return jsonify({'message': 'Part updated successfully'})
+
+
+# Delete a part
+@part_routes.route('/api/parts/<int:id>', methods=['DELETE'])
+def delete_part(id):
+    print('Deleting a part')
+    part = Parts.query.get(id)
+    db.session.delete(part)
+    db.session.commit()
+    return jsonify({'message': 'Part deleted successfully'})
+
+
+# Get a part
+@part_routes.route('/api/parts/<int:id>', methods=['GET'])
+def get_part(id):
+    print('Getting a part')
+    part = Parts.query.get(id)
+    part_dict = {
+        'id': part.id,
+        'partName': part.partName,
+        'partType': part.partType,
+        'quantity': part.quantity,
+        'price': part.price
+    }
+    return jsonify(part_dict)
