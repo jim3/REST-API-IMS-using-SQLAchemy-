@@ -8,7 +8,6 @@ app = Flask(__name__)
 # Register the the routes from router.py
 app.register_blueprint(router.part_routes)
 
-# parts.db | /home/j3/Code/GitHub/inventory-flask/parts.db
 # Configure the database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/j3/Code/GitHub/inventory-flask/parts.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
