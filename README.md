@@ -36,10 +36,8 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 
 ### Installation
 
--   Create a virtual environment `python3 -m venv {project_name}`
+-   Create a virtual environment
 -   Clone the repository `git clone {repository_url}`
--   `python3 -m venv {project_name}`
--   `source {project_name}/bin/activate`
 
 
 ----
