@@ -2,18 +2,21 @@
 
 ### Description
 
-A RESTful API for an inventory management application for parts (fasteners). Flask handles the routing and server-side logic. SQLAchemly ORM is used to interact with a SQLite3 database.
+A RESTful API for an inventory management application for parts (fasteners). Flask handles the routing and server-side logic. SQLAchemy ORM is used to interact with a SQLite3 database.
 The focus of the project is to learn more about the Python/Flask ecosystem as I've gained more interest in Python as a language. I am using a previously developed RESTful API as a starting point. The plan is to develop this project while also developing the same application using Node.js, Express and the Sequelize ORM. At least, that is the plan! :D
 
 ### Features
 
 -   Create, Read, Update and Delete parts (CRUD)
 
-### Requirements
+### Tech Stack
 
--   Python 3
--   Flask `pip install Flask`
--   SQlAlchemy `pip install Flask-SQLAlchemy`
+-   Python
+-   Flask
+-   SQLAlchemy ORM
+-   SQLite3
+
+--- 
 
 ### Installation
 
