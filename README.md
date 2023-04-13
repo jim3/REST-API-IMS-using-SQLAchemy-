@@ -58,9 +58,8 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 
 
 
-### Things to do (really soon)
+### Things to do
 
 -   Add more endpoints (CRUD)
 -   Add a `index.html` page with a form to create a new part
 -   Create an Account model and add authentication with login and logout
--   ...
