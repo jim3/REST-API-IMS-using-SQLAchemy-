@@ -9,6 +9,8 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 
 -   Create, Read, Update and Delete parts (CRUD)
 
+---
+
 ### Tech Stack
 
 -   Python
@@ -16,18 +18,8 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 -   SQLAlchemy ORM
 -   SQLite3
 
+
 --- 
-
-### Installation
-
--   Create a virtual environment `python3 -m venv {project_name}`
--   Clone the repository `git clone {repository_url}`
--   `python3 -m venv {project_name}`
--   `source {project_name}/bin/activate`
-
-### Usage
-
--   `python3 app.py`
 
 ### API Endpoints
 
@@ -39,7 +31,20 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 | /parts/{id} | PUT         | Update a part     |
 | /parts/{id} | DELETE      | Delete a part     |
 
-### Example of GET Request in JSON
+
+----
+
+### Installation
+
+-   Create a virtual environment `python3 -m venv {project_name}`
+-   Clone the repository `git clone {repository_url}`
+-   `python3 -m venv {project_name}`
+-   `source {project_name}/bin/activate`
+
+
+----
+
+### Example API Call `${localhost}/api/parts`
 
 ```json
 [
@@ -52,6 +57,8 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
     }
 ]
 ```
+
+
 
 ### Things to do (really soon)
 
