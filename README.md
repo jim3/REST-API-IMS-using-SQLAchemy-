@@ -36,8 +36,8 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 
 ### Installation
 
--   Create a virtual environment
--   Clone the repository `git clone {repository_url}`
+-   `git clone {repo_url}`
+-   `pip3 install -r requirements.txt`
 
 
 ----
