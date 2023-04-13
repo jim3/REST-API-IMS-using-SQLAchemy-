@@ -42,7 +42,7 @@ The focus of the project is to learn more about the Python/Flask ecosystem as I'
 
 ----
 
-### Example API Call `${localhost}/api/parts`
+### Example API Call `{localhost}/api/parts`
 
 ```json
 [
