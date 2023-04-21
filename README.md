@@ -1,4 +1,4 @@
-## RESTful API for a Inventory Management System
+## RESTful API for a Inventory Management System using Python/Flask
 
 ### Description
 
